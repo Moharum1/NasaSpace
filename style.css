@@ -55,6 +55,15 @@ section {
     background-attachment :scroll;
 }
 
+.main1 {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    background-position: center;
+}
+
 .main h2 {
     color: #fff;
     font-size: 3em;
@@ -80,6 +89,7 @@ section {
 
 .main-btn {
     color: #fff;
+    size: 300px;
     background-color: #3a6cf4;
     text-decoration: none;
     font-size: 1.1em;
@@ -313,7 +323,7 @@ section {
   
   #Hello{
     font-family: "Segoe UI", sans-serif;
-    background: url(images/kerkerkerekrekrekre-0١.jpg) no-repeat;
+    background: url(images/Stars-Background.png) no-repeat;
     background-size: cover;
     height: 100vh;
   }
@@ -371,7 +381,7 @@ section {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: black;
+    background: #000;
     background-position: center;
     background-attachment :scroll
     color
