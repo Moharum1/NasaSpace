@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Cataclysmic Variables</title>
+</head>
+<body>
+<div class="bg-container">
+    <section class="main">   
+      <script type="text/javascript">
+      document.addEventListener("mousemove", parallax);
+      function parallax(e){
+        document.querySelectorAll(".object").forEach(function(move){
+  
+          var moving_value = move.getAttribute("data-value");
+          var x = (e.clientX * moving_value) / 250;
+          var y = (e.clientY * moving_value) / 250;
+  
+          move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
+        });
+      }
+      </script>
+        <div>  
+            <h2>Cataclysmic Variables (CVs)
+            <br><span>Cataclysmic variables (CVs) are binary star systems which consists of two stars that
+              are gravitationally bound to and in orbit around each other, in the night sky the stars are seen as
+              a single object from earth. The entire binary system is usually the size of the Earth-Moon system
+              with an orbital period of 1 to 10 hours.
+              </span></h2>
+            <img src="./images/roman-khramtsov-netronstar3.gif">
+            <h2><span>Cataclysmic variables have a white dwarf and a normal star . The white dwarf is often
+              referred to as the "primary" star, and the normal star as the "companion" or the "secondary" star.
+              The companion star, a star that is "normal," like our Sun, loses material onto the white dwarf
+              via accretion. Since the white dwarf is very dense, the gravitational potential energy is
+              enormous, and some of it is converted into X-rays during the accretion process. There are
+              probably more than a million of these cataclysmic variables in the galaxy, but only those near
+              our Sun have been studied in X-rays so far. This is because CVs are fairly faint in X-rays.</span></h2>
+            <h3>feel confidant lets test your new knowledge</h3>
+            <a href="#projects" class="main-btn">start challenge</a>
+        </div>
+    </section>
+</div>
+
+
+</body>
+</html>
+

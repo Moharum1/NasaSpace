@@ -1,0 +1,24 @@
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(images/kerkerkerekrekrekre-0١.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment :scroll;
+}
+
+.main h2 {
+    color: #fff;
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.main h2 span {
+    display: inline-block;
+    margin-top: 10px;
+    color: #ffffff;
+    font-size: .4em;
+    font-weight: 500;
+}

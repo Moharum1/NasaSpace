@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>phoneix</title>
+</head>
+<body>
+
+    <header style="background-color:white ;">
+        <a href="#" class="logo">phoenix</a>
+        <nav class="navigation">
+            <a href="#services">challenges</a>
+            <a href="#projects">magazine</a>
+            <a href="#about">about</a>
+        </nav>
+    </header>
+<div class="bg-container">
+
+    <section id="Hello">
+        <div class="container1">
+            <h2 class="object" data-value="3"><br><span>About the Stars</span></h2>
+            <img src="images/1.png" class="object" data-value="-2" alt="">
+            <img src="images/2.png" class="object" data-value="6" alt="">
+            <img src="images/3.png" class="object" data-value="4" alt="">
+            <img src="images/4.png" class="object" data-value="-6" alt="">
+            <img src="images/5.png" class="object" data-value="8" alt="">
+            <img src="images/6.png" class="object" data-value="-4" alt="">
+            <img src="images/7.png" class="object" data-value="5" alt="">
+            <img src="images/8.png" class="object" data-value="-9" alt="">
+            <img src="images/9.png" class="object" data-value="-5" alt="">
+          </div>
+    </section>
+    <section class="main">   
+      <script type="text/javascript">
+      document.addEventListener("mousemove", parallax);
+      function parallax(e){
+        document.querySelectorAll(".object").forEach(function(move){
+  
+          var moving_value = move.getAttribute("data-value");
+          var x = (e.clientX * moving_value) / 250;
+          var y = (e.clientY * moving_value) / 250;
+  
+          move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
+        });
+      }
+      </script>
+        <div>  
+            <h2>stars<br><span>Stars are the most widely recognized astronomical objects, and represent the most fundamental building blocks of galaxies. The age, distribution, and composition of the stars in a galaxy trace the history, dynamics, and evolution of that galaxy. Moreover, stars are responsible for the manufacture and distribution of heavy elements such as carbon, nitrogen, and oxygen, and their characteristics are intimately tied to the characteristics of the planetary systems that may coalesce about them. Consequently, the study of the birth, life, and death of stars is central to the field of astronomy.</span></h2>
+            <h3>start challenge , know more about stars</h3>
+            <a href="#projects" class="main-btn">start challenge</a>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards" id="services">
+        <h2 class="title">Our Services</h2>
+        <div class="content">
+            <div class="card">
+                <a href="https://sketchfab.com/models/d6521362b37b48e3a82bce4911409303/embed"><div class="icon">
+                    <i class="fas fa-cube"></i>
+                </div></a>
+                <div class="info">
+                    <h3>VR</h3>
+                    <p>Discover new fantastic Virtual Reality and 3D models for the stars </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-swatchbook"></i>
+                </div>
+                <div class="info">
+                    <h3>phoneix magazine</h3>
+                    <p>See the lastest researches in the field of the stars in an easy and fun way</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-comments"></i>
+                </div>
+                <div class="info">
+                    <h3>Elite commuite</h3>
+                    <p>Join our community to find and talk with people who have the same interest as you</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2 class="title">Our lastest researches</h2>
+        <div class="content">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/ss.gif" />
+                </div>
+                <div class="project-info">
+                    <p class="project-category">Discover more about Cataclysmic Variables and how they are formed</p>
+                    <strong class="project-title">
+                        <span>Cataclysmic Variables</span>
+                        <a href="./Page1.html" class="more-details">More details</a>
+                    </strong>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/Cepheid_animation_1.gif" />
+                </div>
+                <div class="project-info">
+                    <p class="project-category">Learn more about Cepheid Variable stars and how scientis use them in space</p>
+                    <strong class="project-title">
+                        <span>Cepheid Variable</span>
+                        <a href="./Page2.html" class="more-details">More details</a>
+                    </strong>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+    
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>
+

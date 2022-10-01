@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Cepheid Variable stars</title>
+</head>
+<body>
+<div class="bg-container">
+    <section class="main">   
+      <script type="text/javascript">
+      document.addEventListener("mousemove", parallax);
+      function parallax(e){
+        document.querySelectorAll(".object").forEach(function(move){
+  
+          var moving_value = move.getAttribute("data-value");
+          var x = (e.clientX * moving_value) / 250;
+          var y = (e.clientY * moving_value) / 250;
+  
+          move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
+        });
+      }
+      </script>
+        <div>  
+            <h2>Cepheid Variable stars (Intrinsic Variable)<br><span>A long time ago astronomers couldn't tell how faraway most of the stars were when they
+                looked up into the night sky. They could only measure distance within a few hundred light
+                years.</span></h2>
+            <h2><span>In 1912 all of this changed when a researcher named Henrietta Leavitt noted a small
+                relatively unknown group of stars known as Cepheid variables, these stars brighten and dim
+                periodically.</span></h2>
+            <h2><span>Cepheid variables are considered a special variable stars because their period, Cepheid
+                period is the time they take to brighten, dim and brighten again. Leavitt was able to measure
+                the period of each star by measuring the timing of its ups and downs in brightness. What she
+                determined was that the brighter the Cepheid, the longer its period.</span></h2>
+            <h2><span>Cepheid's brightness change occur due to helium in the Star's atmosphere when the helium
+                is heated it becomes more opaque making the Cepheid dimmer and when it cools it becomes
+                transparent making the Cepheid brighter.</span></h2>
+            <h2><span>The change in brightness of a Cepheid over time can be plotted on a light curve which is a
+                graph that show the brightness of an object over a period of time</span></h2>
+            <iframe width="100%" height="560" src="https://www.youtube.com/embed/BWs-ONRDDG4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h3>Feel ready lets test your info with some quesstions</h3>
+            <a href="#projects" class="main-btn">start challenge</a>
+        </div>
+    </section>
+</div>
+
+
+</body>
+</html>
+
